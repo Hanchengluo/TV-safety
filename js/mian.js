@@ -43,6 +43,16 @@ $(function() {
     });
   });
 $(function() {
+    $('#u-video-marquee1').marquee({
+        auto: false,
+        speed: 500,
+        showNum: 1,
+        stepLen: 1,
+        prevElement: $('#video-next1'),
+        nextElement: $('#video-prev1')
+    });
+});
+$(function() {
     $('#banner-marquee-box').marquee({
       auto: false,
       interval: 5000,
@@ -64,6 +74,7 @@ $(function() {
             nextElement: $('#slider-prev')
         });
     });
+
 // shopcity marquee
 
 $(function() {
