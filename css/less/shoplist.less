@@ -245,7 +245,7 @@
 }
 .shop-list-box{
 	width: 320px;
-	height: 402px;
+	height: 436px;
 	float: left;
 	margin: 9px 9px 0 0;
 	position: relative;
@@ -256,25 +256,23 @@
 	}
 	.img-box{
 		width:320px;
-		height: 248px;
-		padding-top: 10px;
+		height: 320px;
     margin: 0 auto;
 		overflow: hidden;
 		text-align: center;
-		background: #f9f3a5;
-    &:hover{
-      img{
-       padding-left: 15px;
-      }
-    }
     img{
-      -webkit-transition: all .3s ease;
-      -moz-transition: all .3s ease;
-      -ms-transition: all .3s ease;
-      transition: all .3s ease;
-      padding-left: 10px;
-      display: block;
-      margin: 0 auto;
+      &:hover{
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -ms-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      -webkit-transform: scale(1.04);
+      -moz-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+      -o-transform: scale(1.04);
+      transform: scale(1.04);
+      }
     }
 	}
 	.code-box{
@@ -408,13 +406,12 @@
   }
   .recommend-list{
     width: 201px;
-    height: 201px;
+    height: 264px;
     margin-bottom: 6px;
     border:#a8930d solid 1px;
     .img{
       display: block;
       text-align: center;
-      padding: 14px 0;
     }
     .price{
       font-size: 14px;
@@ -425,8 +422,10 @@
       padding: 0 10px;
       line-height: 18px;
       a{
+        display: block;
         color: #646668;
         font-size: 12px;
+        text-align: center;
       }
     }
   }

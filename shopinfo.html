@@ -270,10 +270,9 @@
 				</div>
 			</div>
 			<div class="w990  l-right">
-        <div class="l-shopinfo-box bg-shoptop lazyload" id="u-detal">
+        <div class="l-shopinfo-box bg-shoptop lazyload" id="u-images">
             <div class="l-shopinfo-tit navbar-wrapper">
               <ul>
-                <li class="menuItem br"><a href="#u-detal">规格参数</a></li>
                 <li class="menuItem br"><a href="#u-images">商品详情</a></li>
                 <li class="menuItem br "><a href="#u-service">售后服务</a></li>
                 <li class="menuItem br"><a href="#u-comment">商品评价<em>(203)</em></a></li>
@@ -288,7 +287,17 @@
               </div>
             </div>
             <div class="l-stickUp-box"></div>
-            <div class="l-shopinfo01 w950">
+            <div class="l-shopinfo-2code w950 ">
+              <div class="u-2code l-float">
+               <div class="l-left">
+                  <img src="word/2code.gif" height="300" width="300" alt="">
+                </div>
+                <div class="l-left" style="padding-left:40px">
+                  <img src="images/erweima1.png" style="border:0" height="297" width="416" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="l-shopinfo01 w950">
               <h2 class="title-si l-float mb24"><span class="l-left">01</span> <p class="l-left">商品参数 DETAIL</p></h2>
               <div class="u-detal l-float">
                 <ul>
@@ -306,17 +315,17 @@
                   <li>置摄像头 :  1200万</li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <div class="l-stickUp-box" id="u-images"></div>
             <div class="l-shopinfo02 w950" >
-              <h2 class="title-si l-float mb24"><span class="l-left">02</span> <p class="l-left">商品展示 IMAGES</p></h2>
+              <h2 class="title-si l-float mb24"><p class="l-left">商品展示 IMAGES</p></h2>
               <div class="u-images">
                 <div style="text-align: center;"><img src="word/u-images1.jpg" height="2018" width="859" alt=""></div>
               </div>
             </div>
             <div class="l-stickUp-box" id="u-service"></div>
             <div class="l-shopinfo03 w950">
-              <h2 class="title-si l-float mb24"><span class="l-left">03</span> <p class="l-left">售后服务 SERVICE</p></h2>
+              <h2 class="title-si l-float mb24"><p class="l-left">售后服务 SERVICE</p></h2>
               <div class="u-service">
                 这是一个简单的jQuery插件，它能让页面目标元素 “固定” 在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。此插件可以在多页面的网站上工作，也能在单页面上面实现导航功能。滚动当前页面看看导航条的效果吧。
                 <br>
@@ -327,7 +336,7 @@
             </div>
             <div class="l-stickUp-box" id="u-comment"></div>
             <div class="l-shopinfo04 w950" >
-              <h2 class="title-si l-float mb24"><span class="l-left">04</span> <p class="l-left">商品评论 COMMENT</p></h2>
+              <h2 class="title-si l-float mb24"><p class="l-left">商品评论 COMMENT</p></h2>
               <div class="u-comment">
                   <div class="sid4_r3" id="tabs_pj">
                         <div class="sidr3_p clearfix">
@@ -534,10 +543,9 @@
       //enabling stickUp on the '.navbar-wrapper' class
       $('.navbar-wrapper').stickUp({
         parts: {
-            0:'u-detal',
-            1:'u-images',
-            2:'u-service',
-            3:'u-comment'
+            0:'u-images',
+            1:'u-service',
+            2:'u-comment'
           },
            itemClass: 'menuItem',
            itemHover: 'active',

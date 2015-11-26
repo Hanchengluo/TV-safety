@@ -216,8 +216,6 @@
                 padding-left: 10px;
 
                 text-align: left;
-
-                border-left: 1px solid #ddd;
                 span
                 {
                     font-size: 14px;
@@ -598,15 +596,18 @@
 }
 
 // 商品细节参数
+.l-shopinfo01{
+    display: none !important;
+}
 .l-shopinfo-box {
    margin-top: 9px;
    .w950{
     .est-layout-page(950px);
    }
    .title-si{
-        width: 950px;
         height: 46px;
         margin-top: 24px;
+        .est-layout-page(950px);
         span{
             font-weight: bold;
             font-size: 32px;
@@ -618,7 +619,7 @@
             border-bottom: #847a48 solid 1px;
             height: 36px;
             line-height: 36px;
-            width: 888px;
+            width: 950px;
             color: #000;
         }
    }
@@ -654,7 +655,8 @@
         padding: 0 10px;
         line-height: 30px;
         text-indent: -9999px;
-        background: url(../../images/shopbtn-cede2.png) center no-repeat;
+        background: url(../../images/icon-weixin-2code.jpg)  center no-repeat;
+        background-size: contain;
         &:hover{
             .cede-img{
                 display: block !important;
@@ -715,11 +717,20 @@
         border-top: #f44a3a solid 2px;
     }
 }
-
-.u-detal{
-    width:888px;
+.l-shopinfo-2code{
+    width:990px !important;
+    padding-bottom: 70px;
+    padding-top: 44px;
+    background: url(../../images/shopinf-top-bg.jpg) left top repeat-x;
+}
+.u-2code{
+    width:800px;
     overflow: hidden;
-    margin-left: 60px;
+    margin: 0 auto;
+}
+.u-detal{
+    width:950px;
+    overflow: hidden;
     li{
         width: 222px;
         float: left;
@@ -730,23 +741,20 @@
     }
 }
 .u-images{
-    width: 888px;
-    margin-left: 60px;
+    width: 950px;
     overflow: hidden;
     img{
         max-width: 888px;
     }
 }
 .u-service{
-    width: 888px;
-    margin-left: 60px;
+    width: 950px;
     overflow: hidden;
     text-align: left;
     line-height: 150%;
 }
 .u-comment{
-    width: 888px;
-    margin-left: 60px;
+    width: 950px;
     overflow: hidden;
 }
 
@@ -754,7 +762,6 @@
 
 // 评论页面
             .sid4_r3{
-                width: 886px;
                 height: auto;
                 margin-bottom: 20px;
                 border:#847a48 solid 1px;
