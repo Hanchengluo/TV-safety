@@ -23,7 +23,7 @@ $(function() {
             auto: false,
             interval: 5000 ,
             speed: 500,
-            showNum: 3,
+            showNum: 5,
             stepLen: 1,
             prevElement: $('#video-next'),
             nextElement: $('#video-prev')
@@ -42,16 +42,6 @@ $(function() {
       nextElement: $('#shopping-prev')
     });
   });
-$(function() {
-    $('#u-video-marquee1').marquee({
-        auto: false,
-        speed: 500,
-        showNum: 1,
-        stepLen: 1,
-        prevElement: $('#video-next1'),
-        nextElement: $('#video-prev1')
-    });
-});
 $(function() {
     $('#banner-marquee-box').marquee({
       auto: false,
@@ -74,7 +64,17 @@ $(function() {
             nextElement: $('#slider-prev')
         });
     });
-
+$(function() {
+        $('#videolist-marquee').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 12,
+            stepLen: 1,
+            prevElement: $('#videolist-next'),
+            nextElement: $('#videolist-prev')
+        });
+    });
 // shopcity marquee
 
 $(function() {
@@ -174,14 +174,14 @@ $(function(){
     $(this).children('.box').stop(true,true).animate({'bottom':-188},200);
   })
 })
-$(function(){
+/*$(function(){
 
   $('.abox').hover(function(){
     $(this).children('.popupbox').stop(true,true).delay(100).animate({'bottom':0,opacity:1},300);
   },function(){
     $(this).children('.popupbox').stop(true,true).animate({'bottom':-282},200);
   })
-})
+})*/
 function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
 var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
 var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
