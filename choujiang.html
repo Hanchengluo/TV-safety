@@ -21,10 +21,10 @@
   <![endif]-->
   <style>
 .l-choujiang-box{
-  width: 800px;
-  height:2245px;
-  margin-bottom: 40px;
-  background: url(images/icon-choujiang.png) center no-repeat;
+    width: 800px;
+    height: 1590px;
+    margin-bottom: 40px;
+    background: url(images/icon-choujiang.png) top center no-repeat;
 }
 .u-choujiang{
   position: absolute;
@@ -34,6 +34,16 @@
   height: 422px;
   background: #f00;
   overflow: hidden;
+  border-radius: 1000px;
+}
+.tanchu-md{
+  display: block;
+  position: absolute;
+  top: 418px;
+  right: 26px;
+  width: 118px;
+  height: 118px;
+  background: #f00; /*为方便定位，可删除*/
   border-radius: 1000px;
 }
 </style>
@@ -126,10 +136,11 @@
       </div>
       <!-- end l-fans-bbs -->
       <div class="l-middle-box l-left l-safetyQuestion" style="background: #ffe501;">
+      <h2 class="column-nav mb8"><a class="fc-h" href="">积分抽奖</a></h2>
         <div class="l-choujiang-box posr">
           <div class="u-choujiang">
-
           </div>
+          <a class="tanchu-md" href="javascript:void();"></a>
         </div>
 
       </div> <!-- end l-middle-box -->
@@ -304,4 +315,21 @@
     <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/marquee.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/mian.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/layer.js" type="text/javascript" charset="utf-8"></script><!-- popup -->
+    <script type="text/javascript">
+      $('.tanchu-md').on('click', function(){
+          layer.open({
+              type: 2,
+              skin: 'layui-my',
+              title: '中奖名单',
+              maxmin: false,
+              shade: 0.3,
+              scrollbar: false,
+              shadeClose: true, //点击遮罩关闭层
+              area : ['660px' , '266px'],
+              content: 'Features/choujiang-md.html',
+              scrollbar: false
+          });
+      });
+      </script>
 </html>

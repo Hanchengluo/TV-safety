@@ -216,3 +216,75 @@ textarea {
         font-weight: bold;
     }
 }
+
+// 返回顶部
+
+.l-rightside-box
+{
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+
+    width: 54px;
+}
+.l-rightside-box ul li
+{
+    position: relative;
+
+    float: left;
+
+    width: 54px;
+    height: 54px;
+
+    border-bottom: 1px solid #444;
+}
+.l-rightside-box ul li .sidebox
+{
+    font: 14px/54px '微软雅黑';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    overflow: hidden;
+
+    width: 54px;
+    height: 54px;
+
+    transition: all .3s;
+
+    opacity: .8;
+    color: #fff;
+    background: #000;
+
+    filter: Alpha(opacity=80);
+}
+.l-rightside-box ul li .sidetop
+{
+    line-height: 54px;
+
+    display: inline-block;
+
+    width: 54px;
+    height: 54px;
+
+    transition: all .3s;
+
+    opacity: .8;
+    background: #000;
+
+    filter: Alpha(opacity=80);
+}
+.l-rightside-box ul li .sidetop:hover
+{
+    opacity: 1;
+    background: #000;
+
+    filter: Alpha(opacity=100);
+}
+.l-rightside-box ul li img
+{
+    float: left;
+}
+

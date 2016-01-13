@@ -129,7 +129,10 @@
     position: relative;
     width: 255px;
     height: 170px;
-    a{
+    li{
+      position: relative;
+    }
+    .title{
       position: absolute;
       display: block;
       width: 239px;
@@ -141,6 +144,45 @@
       color: #fff;
       .ellipsis();
       .rgba-background(rgba(0, 0, 0, 0.7));
+    }
+    .shopcity-prev{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -31px;
+      z-index: 1;
+      display: block;
+      width: 28px;
+      height: 62px;
+      line-height: 62px;
+      color: #fff;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 400;
+      font-family: simsun;
+      opacity: .8;
+      filter: alpha(opacity=20);
+      zoom: 1\0;
+      background: rgba(0,0,0,0.8);
+    }
+    .shopcity-next{
+      position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -31px;
+    z-index: 1;
+    display: block;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: simsun;
+    opacity: .8;
+    filter: alpha(opacity=20);
+    background: rgba(0,0,0,0.8);
     }
   }
   .fansSpacelist{

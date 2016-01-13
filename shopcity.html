@@ -49,7 +49,7 @@
               <a class="weixin" href="">
                 微信
                 <div class="down-2code-box">
-                  <img src="word/2code.gif" height="97" width="97" alt="">
+                  <img src="images/icon-weixin-2code.jpg" height="97" width="97" alt="">
                 </div>
               </a>
             </li>
@@ -61,9 +61,6 @@
             </li>
             <li>
               <a href="" class="download">下载APP
-                <div class="down-2code-box">
-                  <img src="word/2code.gif" height="97" width="97" alt="">
-                </div>
               </a>
             </li>
           </ui>
@@ -809,5 +806,26 @@
 		defaultPlay:false,
 		returnDefault:true
 	});
+</script>
+<div class="l-rightside-box">
+  <ul>
+    <li><a target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800152280&aty=0&a=0&curl=&ty=1" ><div class="sidebox"><img src="images/side_icon04.png">QQ客服</div></a></li>
+    <li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="images/side_icon05.png"></a></li>
+  </ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $(".l-rightside-box ul li").hover(function(){
+    $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#000"})
+  },function(){
+    $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})
+  });
+
+});
+//回到顶部
+function goTop(){
+  $('html,body').animate({'scrollTop':0},600);
+}
 </script>
 </html>

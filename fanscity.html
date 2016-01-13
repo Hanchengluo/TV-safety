@@ -333,9 +333,25 @@
           <div class="fansSpace-box">
             <h2 class="title1 textc mb24"><a href=""><img src="images/icon-fans-space-tit1.jpg" height="43" width="381" alt=""></a></h2>
             <div class="fansSpace-info  l-float">
-              <div class="fansSpaceimg ovh l-left">
-                <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
-                <a href="">我的张智霖20160116演唱会去记录</a>
+              <div class="fansSpaceimg posr ovh l-left">
+                <a href="javascript:void(0)" class="shopcity-prev" id="fansSpace-prev1"><</a>
+                <div class="u-fansSpace-marquee" id="u-fansSpace-marquee1">
+                  <ul>
+                    <li>
+                      <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
+                      <a class="title" href="">我的张智霖20160116演唱会去记录</a>
+                    </li>
+                    <li>
+                      <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
+                      <a class="title" href="">我的张智霖20160116演唱会去记录</a>
+                    </li>
+                    <li>
+                      <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
+                      <a class="title" href="">我的张智霖20160116演唱会去记录</a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0)" class="shopcity-next" id="fansSpace-next1">></a>
               </div>
               <div class="l-right fansSpacelist">
                 <ul>
@@ -352,9 +368,25 @@
             </div>
             <h2 class="title1 textc mb24"><a href=""><img src="images/icon-fans-space-tit2.jpg" height="42" width="795"alt=""></a></h2>
             <div class="fansSpace-info l-float">
-              <div class="fansSpaceimg ovh l-left">
-                <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
-                <a href="">我的张智霖20160116演唱会去记录</a>
+              <div class="fansSpaceimg posr ovh l-left">
+                <a href="javascript:void(0)" class="shopcity-prev" id="fansSpace-prev2"><</a>
+                <div class="u-fansSpace-marquee" id="u-fansSpace-marquee2">
+                  <ul>
+                    <li>
+                      <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
+                      <a class="title" href="">我的张智霖20160116演唱会去记录</a>
+                    </li>
+                    <li>
+                      <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
+                      <a class="title" href="">我的张智霖20160116演唱会去记录</a>
+                    </li>
+                    <li>
+                      <img src="word/fansSpace-info1.jpg" height="170" width="255" alt="">
+                      <a class="title" href="">我的张智霖20160116演唱会去记录</a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0)" class="shopcity-next" id="fansSpace-next2">></a>
               </div>
               <div class="l-right fansSpacelist">
                 <ul>
@@ -665,5 +697,31 @@
     <script src="js/mian.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(".l-groupFind-list li:nth-child(3n)").css("border","none");
+      // 滚动
+      $(function() {
+          $('#u-fansSpace-marquee1').marquee({
+              auto: false,
+              interval: 5000 ,
+              speed: 500,
+              showNum: 5,
+              stepLen: 1,
+              prevElement: $('#fansSpace-next1'),
+              nextElement: $('#fansSpace-prev1')
+          });
+      });
+      $(function() {
+          $('#u-fansSpace-marquee2').marquee({
+              auto: false,
+              interval: 5000 ,
+              speed: 500,
+              showNum: 5,
+              stepLen: 1,
+              prevElement: $('#fansSpace-next2'),
+              nextElement: $('#fansSpace-prev2')
+          });
+      });
+    </script>
+    <script>
+
     </script>
   </html>
