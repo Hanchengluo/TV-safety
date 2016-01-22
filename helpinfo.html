@@ -6,7 +6,7 @@
   <title>购物商城·电视台安全总动员</title>
   <meta name="keywords" content='播客,视频,视频下载,视频搜索,电影视频,电视剧视频,综艺视频,游戏视频,舞蹈视频,在线视频免费视频,自拍,视频教学,网络视频,搞笑视频,视频短片'/>
   <meta name="description" content='是你会喜欢的个人视频网站，免费无限空间，上传你的视频，观看和搜索海量视频节目，收藏你喜欢的视频，订阅你关注的播客，简单方便地分享给你的朋友们。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。' />
-  <link rel="stylesheet" href="../css/css/mian.css">
+  <link rel="stylesheet" href="css/css/mian.css">
   <link rel="bookmark" href="../images/favicon.ico" type="image/x-icon">
   <!--[if lte IE 6]>
   <script src="js/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
@@ -68,7 +68,7 @@
       <div class="l-search-box l-float">
         <div class="l-logo-search l-left">
           <a href="index.html">
-            <img src="../images/top-banner-logo.png" alt=""></a>
+            <img src="images/top-banner-logo.png" alt=""></a>
         </div>
         <div class="u-search l-left">
           <input class="l-left" name="w" type="text" x-webkit-speech="" x-webkit-grammar="">
@@ -199,17 +199,15 @@
         </div>
         <div class="l-helpcontent l-left">
           <div class="h-in-tit">
-            <span>订单百事通</span>><span><a href="helpques.html">提交订单</a></span>><span>提交订单相关问题</span>
+            <span>订单百事通</span>><span><a href="helpques.html">提交订单</a></span>><span><a href="helpinfo.html">提交订单相关问题</a></span>
           </div>
           <div class="all-ques-tab">
-            <div class="questab-tit">
-              <ul>
-                <li class="all-ques list-item"><a href="#">全部</a></li>
-                <li class="list-item cur"><a href="helpques.html">提交订单相关问题</a></li>
-              </ul>
+            <div class="contxt">
+              <div class="contit">下单后可以修改订单吗？</div>
+              <p>由安全总动员快递发货的订单，在订单打印之前可以修改，打开“订单详情”页面，点击右上角的“修改订单”即可，若没有修改订单按钮，则表示订单无法修改。</p>
             </div>
             <div class="quescons">
-              <h4>问题知识列表</h4>
+              <h4>猜你感兴趣的问题</h4>
               <ul>
                 <li>
                   <a href="helpinfo.html"><b>·</b>为什么我的订单总是无法提交成功？</a>
@@ -240,7 +238,7 @@
     <h2 class="title">LOAD MORE STORIES</h2>
     <div class="l-fooder-mians l-float">
       <div class="fooder-state">
-        <img src="../images/shopping-food.jpg" height="72" width="1139"></div>
+        <img src="images/shopping-food.jpg" height="72" width="1139"></div>
       <div class="fooder-links">
         <ul style="padding-left:100px">
           <li>
@@ -314,7 +312,7 @@
     </div>
   </div>
 </body>
-  <script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
   <div class="l-rightside-box">
     <ul>
       <li>
@@ -346,15 +344,15 @@ function goTop(){
 
 //侧边栏下拉
 $(".subside-in dt").css({"background-color":"#eaeaea"});
-$(".subside-in dt img").attr("src","../images/icon-arrow-down.png");
+$(".subside-in dt img").attr("src","images/icon-arrow-down.png");
 $(function(){
   $(".subside-in dd").hide();
   $(".subside-in dt").click(function(){
     $(".subside-in dt").css({"background-color":"#eaeaea"})
     $(this).css({"background-color": "#dadada","color": "#666"});
     $(this).parent().find('dd').removeClass("menu_chioce");
-    $(".subside-in dt img").attr("src","../images/icon-arrow-down.png");
-    $(this).parent().find('img').attr("src","../images/icon-arrow-up.png");
+    $(".subside-in dt img").attr("src","images/icon-arrow-down.png");
+    $(this).parent().find('img').attr("src","images/icon-arrow-up.png");
     $(".menu_chioce").slideUp(); 
     $(this).parent().find('dd').slideToggle();
     $(this).parent().find('dd').addClass("menu_chioce");
