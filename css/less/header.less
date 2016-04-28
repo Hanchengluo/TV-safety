@@ -17,14 +17,13 @@
     .est-layout-page(1200px);
     li{
         float: left;
-        width: 400px;
         font-size: 30px;
         .br{
             border-right: #9c8c0b solid 1px;
         }
         a{
             display: inline-block;
-            width: 400px;
+            width: 100%;
             color: #fff;
             font-weight: 600;
             text-align: center;
@@ -33,6 +32,12 @@
                 color: #FFE501;
             }
         }
+    }
+    .w400{
+         width: 400px;
+    }
+    .w300{
+         width: 300px;
     }
     .active {
           background: url(../../images/icon-navbg-hover.png) center center no-repeat;
@@ -63,4 +68,41 @@
     z-index: -1;
     top: 83px;
     left:0;
+}
+
+
+
+#menu-left
+{
+    position: fixed;
+    top: 50%;
+    left: 15px;
+    width: 60px;
+    height: auto;
+    margin-top: -135px;
+}
+#menu-left ul
+{
+    display: block;
+
+    list-style: none;
+}
+#menu-left ul li a
+{
+    line-height: 54px;
+
+    display: block;
+
+    width: 60px;
+    height: 54px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    background-color: #252525;
+}
+#menu-left ul li a:hover,
+#menu-left ul li a.cur
+{
+    background-color: #F3AC18;
 }

@@ -23,7 +23,7 @@ $(function() {
             auto: false,
             interval: 5000 ,
             speed: 500,
-            showNum: 5,
+            showNum: 3,
             stepLen: 1,
             prevElement: $('#video-next'),
             nextElement: $('#video-prev')
@@ -35,11 +35,23 @@ $(function() {
       auto: false,
       interval: 5000,
       speed: 500,
-      showNum: 3,
+      showNum: 8,
       stepLen: 1,
       type: 'vertical',
       prevElement: $('#shopping-next'),
       nextElement: $('#shopping-prev')
+    });
+  });
+$(function() {
+    $('#shopping-marquee1').marquee({
+      auto: false,
+      interval: 5000,
+      speed: 500,
+      showNum: 8,
+      stepLen: 1,
+      type: 'vertical',
+      prevElement: $('#shopping-next1'),
+      nextElement: $('#shopping-prev1')
     });
   });
 $(function() {
