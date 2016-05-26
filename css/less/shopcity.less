@@ -8,28 +8,52 @@
   }
 }
 .l-shop-nav{
-  padding:2px 0;
+  padding:0;
   .rgba-background(#000, 100%);
   .est-layout-page(1190px);
   .br{
       border-right:#ffe501 solid 1px;
   }
-  li{
+  .down-nav{
+    display: none;
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    z-index: 9999;
+    li{
+      a{
+        display: inline-block;
+        width: 98%;
+        margin:0 auto;
+        border-bottom: #fff solid 1px;
+      }
+    }
+    li:last-child a{
+          border-bottom: none;
+      }
+    a:hover{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  .items-li{
     float: left;
     width: 197px;
     text-align: center;
     font-weight: bold;
+    position: relative;
+    padding: 2px 0;
     .centered-line(34px);
-    &:hover{
-      height: 32px;
-      line-height: 32px;
-    }
     a{
       display:inline-block;
       width: 197px;
       font-size: 15px;
       color: #ffe501;
-      .hover-link();
+    }
+    &:hover .down-nav{
+      display: block !important;
     }
   }
 }
@@ -123,8 +147,8 @@
 .idx_ad{width:1200px;margin:0 auto;margin-top:30px;}
 .idx01{margin-top:20px;margin-bottom: 20px;padding:  10px 0;}
 .idx01 dl dt{}
-.idx01 dl dt b{float:left;background:url(../../images/ico15.png) no-repeat left center;padding-left:35px;color:#e83426;font-size:20px;margin-left: 10px;}
-.idx01 dl dt span{display:inline-block;line-height:30px;font-size:14px;margin-left:15px;float:left;padding-top: 18px;}
+.idx01 dl dt b{float:left;padding-left:35px;color:#FFE501;font-size:30px;margin-left: 514px;font-weight: 100;}
+.idx01 dl dt span{display:none;line-height:30px;font-size:14px;margin-left:15px;float:left;padding-top: 18px;}
 .idx01 dl dt p{float:right;margin-right: 10px;}
 .rollBox{width:1200px;overflow:hidden;margin:0 auto;}
 .rollBox .Cont{width:1200px;overflow:hidden;margin:0 auto;}
@@ -134,15 +158,45 @@
 .rollBox #List1,.rollBox #List2{float:left;}
 .rollBox .img1{top:0;right:0;cursor:pointer}
 .rollBox .img2{top:0;right:30px;cursor:pointer}
-.idx01 dl dd img{position:absolute;left:30px;bottom:30px}
-.idx01 dl dd .p01{font-weight:bold;font-size:20px;color:#000;margin-top:30px}
+.idx01 dl dd img{position:absolute;left:30px;bottom:30px;-webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;}
+
+.idx01 dl dd img:hover{
+      -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    -moz-transform: translate(-5px, -5px);
+    -webkit-transform: translate(-5px, -5px);
+    -o-transform: translate(-5px, -5px);
+    -ms-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px);
+    -webkit-box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+    -moz-box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+    -o-box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+    box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+}
+.idx01 dl dd .p01{font-weight:bold;font-size:20px;color:#000 !important;margin-top:30px}
+.idx01 dl dd .p01 a{color: #000}
 .idx01 dl dd .p02{position:absolute;top:80px;right:10px;z-index:2;width:140px;text-align:left}
 .idx01 dl dd .p02 font{font-size:14px;color:#ea1d24}
 .idx01 dl dd .p02 b{font-size:26px;color:#ea1d24}
 .idx01 dl dd .p02 em{color: #666;text-decoration: line-through;line-height: 18px;}
 .idx01 dl dd .p02 span{font-size:16px;color:#595959;line-height:25px;text-align:left;display:block}
 .idx01 dl dd .p02 .buy{background:#ea3c1f;border-radius:3px;text-align:center;color:#fff;font-size:16px;padding:6px 15px;position:absolute;bottom:-70px;display:inline-block;width:90px;left:0px}
-.shou{position: absolute;top: 0;left: -51px;background: rgba(255, 229, 1, 0.61);display: inline-block;padding: 3px 6px;color: #000;text-decoration: blink;
+.shou{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(234, 60, 31);
+    display: inline-block;
+    padding: 3px 6px;
+    color: #FFF;
+    text-decoration: blink;
+    &:hover{
+      text-decoration: underline;
+      color: #fff !important;
+    }
 }
 .features-box{
   display: block;

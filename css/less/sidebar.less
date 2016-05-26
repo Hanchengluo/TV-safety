@@ -4,11 +4,9 @@
     width: 1190px;
     margin: 0 auto;
     height: 455px;
-    overflow: hidden;
 }
 #nav
 {
-    position: relative;
     z-index: 1;
     top: 0;
     height: 448px;
@@ -36,6 +34,7 @@
 #nav .mod_cate,
 #nav .mod_cate2
 {
+    position: relative;
     height: 40px;
     padding: 5px 20px;
     line-height: 40px;
@@ -81,14 +80,14 @@
 #nav .mod_subcate
 {
     position: absolute;
-    z-index: -1;
-    top: 60px;
+    z-index: 9999;
+    top: 0;
     left: 198px;
     display: none;
     overflow-x: hidden;
     overflow-y: auto;
     width: 142px;
-    height: 386px;
+    height: auto;
     border: 2px #000 solid;
     background: rgba(0,0,0,0.75);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
@@ -99,7 +98,6 @@
     float: left;
 
     width: 144px;
-    margin-bottom: -1000px;
     dt{
     }
     a{
