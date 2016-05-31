@@ -124,8 +124,10 @@
                         </span>
                     </div>
                   <!--缩图开始-->
-                    <div class="spec_scroll">
-                        <div class="items">
+                    <div class="spec_scroll" style="position: relative;height: 80px;overflow: hidden;">
+                        <a href="javascript:void(0)" class="specscroll-prev" id="specscroll-prev" style="position: absolute;top: 3px;width: 26px;height: 74px;background: #FFE100;color: #fff;font-size: 30px;text-align: center;line-height: 70px;z-index: 9999;font-family: '宋体';"><</a>
+                        <a href="javascript:void(0)" class="specscroll-next" id="specscroll-next" style="position: absolute;top: 3px;width: 26px;height: 74px;background:#FFE100;color: #fff;font-size: 30px;text-align: center;line-height: 70px;z-index: 9999;right:0;    font-family: '宋体';">></a>
+                        <div class="items" id="shopcity-specscroll" style="    margin: 0 0 0 42px;">
                             <ul>
                                 <li>
                                   <img alt="佳能" bimg="word/info_word1b.jpg" src="word/info_word1.jpg" onmousemove="preview(this);"></li>
@@ -136,9 +138,15 @@
                                 <li>
                                   <img alt="佳能" bimg="word/info_word_2_04b.jpg" src="word/info_word_2_04.jpg" onmousemove="preview(this);"></li>
                                 <li>
-                                  <img alt="佳能" bimg="word/info_word1b.jpg" src="word/info_word1.jpg" onmousemove="preview(this);"></li>
+                                  <img alt="佳能1" bimg="word/info_word1b.jpg" src="word/info_word1.jpg" onmousemove="preview(this);"></li>
                                 <li>
-                                  <img alt="佳能" bimg="word/info_word_2_02b.jpg" src="word/info_word_2_02.jpg" onmousemove="preview(this);"></li>
+                                  <img alt="佳能2" bimg="word/info_word_2_02b.jpg" src="word/info_word_2_02.jpg" onmousemove="preview(this);"></li>
+                                  <li>
+                                  <img alt="佳能3" bimg="word/info_word_2_04b.jpg" src="word/info_word_2_04.jpg" onmousemove="preview(this);"></li>
+                                <li>
+                                  <img alt="佳能4" bimg="word/info_word1b.jpg" src="word/info_word1" onmousemove="preview(this);"></li>
+                                <li>
+                                  <img alt="佳能5" bimg="word/info_word_2_02b.jpg" src="word/info_word_2_02.jpg" onmousemove="preview(this);"></li>
                             </ul>
                         </div>
                     </div>
@@ -573,5 +581,16 @@ $(function() {
     effect : "fadeIn"
   });
 });
+$(function() {
+    $('#shopcity-specscroll').marquee({
+      auto: false,
+      interval: 5000,
+      speed: 500,
+      showNum: 5,
+      stepLen: 1,
+      prevElement: $('#specscroll-next'),
+      nextElement: $('#specscroll-prev')
+    });
+  });
 </script>
 </html>
